@@ -1,0 +1,77 @@
+/* Global Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF; /* White background color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A8CBBD;
+}
+
+.logo img {
+    width: 500px;
+    height: auto;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.login-selection {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login-selection h1 {
+    font-size: 30px;
+    color: #A8CBBD;
+    margin-bottom: 30px;
+}
+
+.selection-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.selection-buttons button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #A8CBBD;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+}
+
+.selection-buttons button:hover {
+    background-color: #86B1A1;
+}
+

@@ -1,0 +1,406 @@
+/* Global Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF; /* White background color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A8CBBD;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #ccc;
+    background-color: #A8CBBD;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons img {
+    width: 34px;
+    height: 34px;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Profile Section Styling */
+.profile-section {
+    text-align: left;
+    margin-bottom: 50px;
+    align-self: flex-start;
+}
+
+.profile-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile-image {
+    width: 250px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+.profile-section p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 100px;
+}
+
+.profile-section button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #A8CBBD;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Poster Container Styling */
+.poster-container {
+    margin-bottom: 30px;
+}
+
+.poster-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* Reviews Section Styling */
+.reviews-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #FFFFFF; /* Background color for the reviews section */
+}
+
+.reviews-section h2 {
+    text-align: center;
+    color: #A8CBBD; /* Heading color */
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Adjusted gap for better spacing */
+}
+
+.review-list li {
+    background-color: #A8CBBD;
+    border-radius: 20px;
+    padding: 15px;
+    width: calc(33.333% - 20px); /* Adjusted width to fit three items in a row */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.review-list img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Review Form Styling */
+.review-form button {
+    padding: 10px 20px;
+    background-color: #A8CBBD; /* Green background color */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Navigation Buttons Styling */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.nav-buttons button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #A8CBBD;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.nav-buttons button img.nav-icon {
+    width: 60px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #A8CBBD;
+    color: #FFFFFF;
+}
+
+/* Service List Styling */
+.service-list {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #FFFFFF; /* Background color for the services section */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusted gap for better spacing */
+}
+
+.service-list li {
+    background-color: #A8CBBD;
+    border-radius: 20px;
+    padding: 15px;
+    width: calc(33.333% - 20px); /* Adjusted width to fit three items in a row */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-list img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Products Showcase Styling */
+.products-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #FFD700; /* Gold color for stars */
+    margin-bottom: 10px;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #A8CBBD;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Login & Logout Page CSS Styling */
+.login-section, .logout-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.login-section form, .logout-section form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-section input, .logout-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-section button, .logout-section button {
+    padding: 10px;
+    background-color: #A8CBBD;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Register Page CSS Styling */
+.register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.register-section form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-section button {
+    padding: 10px;
+    background-color: #A8CBBD;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+/* About Us Images Styling */
+.about-us-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-image {
+    width: calc(33.333% - 20px);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+/* Checkout button styles */
+
+.checkout-button {
+    text-align: center;
+     margin: 20px 0;
+}
+
+.checkout-button button {
+    padding: 10px 20px;
+    background-color: #A8CBBD; /* Match the background color */
+    color: #FFFFFF; /* Match the text color */
+    border: none;
+    border-radius: 5px; /* Match the border radius */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}
+
